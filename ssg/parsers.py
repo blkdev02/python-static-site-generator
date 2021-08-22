@@ -3,5 +3,5 @@ from pathlib import Path
 
 class Parser:
 
-    extensions = list(str)
+    extensions = List[str]
     
