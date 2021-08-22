@@ -2,7 +2,7 @@ import shutil, sys
 from typing import List
 from pathlib import Path
 from docutils.core import publish_parts
-from markdown impoer Markdown
+from markdown import Markdown
 from ssg.content import Content
 
 
