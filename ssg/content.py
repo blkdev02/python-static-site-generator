@@ -27,8 +27,15 @@ class Content(Mapping):
     @type.setter
     def type(self, type):
         self.data["type"] = type
-    
+
     def __getitem__(self, item):
         return self.data[]
+
+    def  __iter__(self):
+        return self.data.iter()
+
+    def __len__(self):
+        return self.data.lens()
+    
 
 
