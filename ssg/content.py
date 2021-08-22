@@ -1,6 +1,8 @@
 import re
-from yaml import load, FullLoader
+
 from collections.abc import Mapping
+from yaml import load, FullLoader
+
 
 class Content(Mapping):
     __delimiter = r"^(?:-|\+){3}\s*$"
@@ -31,8 +33,8 @@ class Content(Mapping):
     def __getitem__(self, key):
         return self.data[key]
 
-    def  __iter__(self):
-        self.data.__iter()
+    def __iter__(self):
+        self.data.__iter__()
 
     def __len__(self):
         return len(self.data)
@@ -43,8 +45,3 @@ class Content(Mapping):
             if key != "content":
                 data[key] = value
         return str(data)
-
-
-
-
-
