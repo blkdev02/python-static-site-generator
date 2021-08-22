@@ -6,7 +6,7 @@ class Parser:
     extensions: List[str] = []
 
     def vaild_extension(self, extension):
-        if extension in self.extensions:
-            return True
-        else:
-            return False
+        return extension in self.extensions
+
+    def parse(self, path: Path, source: Path, dest: Path):
+        raise NotImplementedError
