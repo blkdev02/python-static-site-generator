@@ -26,4 +26,7 @@ class Parser:
 
 
 
+class ResourceParser(Parser):
+
+    extensions = [".jpg", ".png", ".gif", ".css", ".html"]
 
