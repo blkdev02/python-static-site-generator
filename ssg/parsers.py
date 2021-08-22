@@ -22,7 +22,7 @@ class Parser:
             file.write(content)
 
     def copy(self, path, source, dest):
-        shutil.copy2(path, dest/ source.path())
+        shutil.copy2(path, dest / path.relative_to(source))
 
 
 
