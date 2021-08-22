@@ -28,14 +28,17 @@ class Content(Mapping):
     def type(self, type):
         self.data["type"] = type
 
-    def __getitem__(self, item):
-        return self.data[]
+    def __getitem__(self, key):
+        return self.data[key]
 
     def  __iter__(self):
-        return self.data.iter()
+        self.data.__iter()
 
     def __len__(self):
-        return self.data.lens()
-    
+        return len(self.data)
+
+    def __repr__(self):
+        data
+
 
 
