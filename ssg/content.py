@@ -18,5 +18,4 @@ class Content(Mapping):
 
     @property
     def body(self):
-        return self.data["consent"]
-    
+        return self.data["content"]
