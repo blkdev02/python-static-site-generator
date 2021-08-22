@@ -1,6 +1,10 @@
-import shutil
+import shutil, sys
 from typing import List
 from pathlib import Path
+from docutils.core import publish_parts
+from markdown impoer Markdown
+from ssg.content import Content
+
 
 class Parser:
 
@@ -32,3 +36,7 @@ class ResourceParser(Parser):
 
     def parse(self, path: Path, source: Path, dest: Path):
         self.copy(path, source, dest)
+
+class MarkdownParser(Parser):
+
+    extensions = [".md", "markdown"]
